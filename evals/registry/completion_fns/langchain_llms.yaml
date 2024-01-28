@@ -25,3 +25,10 @@ langchain/chat_model/gpt-3.5-turbo:
     llm: ChatOpenAI
     llm_kwargs:
       model_name: gpt-3.5-turbo
+
+langchain/chat_model/gpt-4-preview-custom-functions:
+  class: evals.completion_fns.custom_functions:CustomFunctionsCompletionFn
+  args:
+    llm: ChatOpenAI
+    llm_kwargs:
+      model_name: gpt-4-0125-preview
